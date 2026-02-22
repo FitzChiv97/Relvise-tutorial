@@ -20,6 +20,15 @@ img {
     vertical-align: top;
 }
 
+/*
+modern alternative
+
+img {
+    display: block;
+    max-width: 100%;
+}
+*/
+
 h1, h2, h3, h4, h5, h6 {
     font-weight: inherit;
     font-size: inherit;
@@ -30,10 +39,16 @@ html, body {
     line-height: 1;
     font-size: 16px;
     color: #000;
+    font-family: Montserrat;
 }
 /*--------------------*/
 
 .wrapper {
     min-height: 100%;
     overflow: hidden;
+}
+
+._container {
+    max-width: 1046px;
+    margin: 0 auto;
 }
