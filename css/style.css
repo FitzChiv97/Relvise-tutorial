@@ -71,6 +71,12 @@ html, body {
    align-items: center;
 }
 
+@media (max-width: 479px) {
+   .header__container {
+      min-height: 85px;
+   }
+}
+
 .header__logo {
    font-weight: 700;
    font-size: 24px;
@@ -81,8 +87,26 @@ html, body {
    margin: 0px 0px 0px 133px;
 }
 
-.menu {
+@media (max-width: 992px) {
+   .header__menu {
+      margin: 0px 0px 0px 80px;
+   }
+}
 
+@media (max-width: 767px) {
+   .header__menu {
+      margin: 0px 0px 0px 40px;
+   }
+}
+
+@media (max-width: 479px) {
+   .header__menu {
+      margin: 0px 0px 0px 20px;
+   }
+}
+
+.menu {
+   padding: 5px 0px; /* preventing content from touching the screen */
 }
 
 .menu__list {
@@ -102,4 +126,10 @@ html, body {
    font-weight: 600;
    line-height: 171%;     /* 24px / 14px * 100% = line-height / font-size * 100% */
    color: #737373;
+}
+
+@media (max-width: 479px) {
+   .menu__link {
+      font-size: 18px;   /* line-height should increase too because it has a % value*/
+   }
 }
