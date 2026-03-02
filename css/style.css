@@ -35,6 +35,7 @@ h1, h2, h3, h4, h5, h6 {
 
 html, body {
    height: 100%;
+   background: #fafafa;
    line-height: 1;
    font-size: 14px; 
    font-weight: 500;
@@ -284,7 +285,6 @@ html, body {
 /*------------------SERVICES------------------------*/
 
 .services {
-
 }
 
 .sevices-container {
@@ -368,6 +368,78 @@ html, body {
    font-size: 14px;
    line-height: 143%;
    letter-spacing: 0.01em;
+   color: #737373;
+}
+
+/*------------------HEADER-BLOCK------------------------*/
+
+.header-block {
+   text-align: center;
+   letter-spacing: 0.01em;
+}
+.header-block__title {
+   font-weight: 700;
+   font-size: 40px;
+   line-height: 143%;
+}
+
+.header-block__title:not(:last-child) {
+   margin: 0px 0px 10px 0px;
+}
+
+.header-block__sub-title {
+   font-weight: 500;
+   line-height: 143%;
+   color: #737373;
+}
+
+/*------------------ADVANTAGES------------------------*/
+
+.advantages {
+   padding: 80px;
+}
+
+.advantages__header {
+   margin: 0px 0px 50px 0px;
+}
+
+.advantages__body {
+   display: flex;
+   margin: 0px -15px;
+}
+
+.advantages__column {
+   padding: 0px 15px;
+   flex: 0 1 25%;
+}
+
+.advantages__item {
+   padding: 30px;
+   font-weight: 700;
+   text-align: center;
+   letter-spacing: 0.01em;
+   background-color: #fff;
+}
+
+.advantages__item > *:not(:last-child) {
+   margin: 0px 0px 10px 0px;
+}
+
+.advantages__icon {
+   height: 48px;
+   display: flex;
+   justify-content: center;
+   align-items: flex-end;  /* push the element to the bottom of its container; all icons on the same line */
+}
+
+.advantages__value {
+   font-size: 40px;
+   line-height: 143%;
+}
+
+.advantages__text {
+   font-size: 16px;
+   line-height: 150%;
    color: #737373;
 }
 
