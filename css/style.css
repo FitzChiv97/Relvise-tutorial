@@ -583,10 +583,17 @@ html, body {
    padding: 0px 0px 60% 0px;
 }
 
+/*------------------------SECTION-------------------------------*/
+
+.section {
+   background-color: #fff;
+}
+
 /*------------------SECTION-HEADER-BLOCK------------------------*/
 
 .section__header-block {
-   margin: 100px auto;
+   /* margin: 100px auto; */
+   padding: 100px 0;
    max-width: 511px;
 }
 
