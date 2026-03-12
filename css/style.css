@@ -617,6 +617,43 @@ html, body {
    max-width: 333px;
 }
 
+@media (max-width:960px) {
+   .about-us__body {
+      align-items: center;
+      justify-content: space-around;
+   }
+
+   .about-us__video {
+      flex: 0 1 100%;
+   }
+
+   .about-us__video iframe {
+      height: 400px;
+   }
+
+   .about-us__stats {
+      margin: 30px 0px 0px 0px;
+   }
+}
+
+@media (max-width:690px) {
+   .about-us__video iframe {
+      height: 340px;
+   }
+}
+
+@media (max-width:510px) {
+   .about-us__video iframe {
+      height: 300px;
+   }
+}
+
+@media (max-width:360px) {
+   .about-us__video iframe {
+      height: 200px;
+   }
+}
+
 .stats__header-block {
    margin: 20px 0;
    text-align: start;
