@@ -42,7 +42,23 @@ html, body {
    color: #252b42;
    font-family: Montserrat;
 }
-/*------------------------------------------------*/
+
+/*-------------------Helpers / Accessibility-----------------------------*/
+
+.visually-hidden {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   margin: -1;
+   padding: 0;
+   border: 0;
+   white-space: nowrap;
+   overflow: hidden;
+   clip-path: inset(100%);
+   clip: rect(0 0 0 0);
+}
+
+/*------------------------------------------------------------------------*/
 
 .wrapper {
    min-height: 100%;
@@ -714,8 +730,6 @@ html, body {
 .partners__subscribe {
    margin: 0 auto;
    max-width: 986px;
-   border-radius: 2px;
-   background: #17213c;
 }
 
 .subscribe {
@@ -723,6 +737,22 @@ html, body {
    display: flex;
    justify-content: space-between;
    align-items: center;
+   border-radius: 2px;
+   background: #17213c;
+}
+
+@media(max-width: 1024px) {
+   .subscribe {
+      gap: 40px;
+   }
+}
+
+@media(max-width:768px) {
+   .subscribe {
+      flex-direction: column;
+      justify-content: center;
+      align-items: stretch;
+   }
 }
 
 .subscribe__content {
@@ -734,9 +764,17 @@ html, body {
 }
 
 .subscribe__action {
+   flex: 1 1 auto;
+   max-width: 450px;
 }
 
 .subscribe__form {
+   display: flex;
+   align-items: center;
+   background: #f9f9f9;
+   border: 1px solid #e6e6e6;
+   border-radius: 5px;
+   overflow: hidden;
 }
 
 .visually-hidden {
@@ -744,18 +782,31 @@ html, body {
 }
  
 .subscribe__input {
+   flex: 1 1 auto;
+   width: 0;
    padding: 15px 20px;
-   max-width: 450px;
-   font-size: 14px;
+   background: transparent;
+   border: none;
+   outline: none;
    line-height: 200%;
    letter-spacing: 0.01em;
 }
 
 .subscribe__button {
-   font-size: 14px;
+   flex: 0 0 auto;
+   padding: 15px 22px;
+   background: #ff7b47;
+   border: none;
+   color: #fff;
    line-height: 200%;
    letter-spacing: 0.01em;
    text-align: center;
+   cursor: pointer;
+   transition: background 0.3s ease; 
+}
+
+.subscribe__button:hover {
+   background: #e56b3a; 
 }
 
 /*------------------FOOTER------------------------*/
