@@ -829,7 +829,82 @@ html, body {
    background: #e56b3a; 
 }
 
-/*------------------FOOTER------------------------*/
+/*--------------------------------CONTACT-US----------------------------*/
+
+.contact-us {
+   padding: 0px 0px 166px 0px;
+}
+
+.contact-us__row {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 7px;
+}
+
+.contact-us__card {
+   padding: 50px 40px;
+}
+
+@media(max-width: 360px) {
+   .contact-us__card {
+      padding: 40px 20px;
+   }
+}
+
+.contact-card {
+   display: flex;
+   max-width: 327px;
+   flex-direction: column;
+   align-items: center;
+   gap: 15px;
+   text-align: center;
+   background: #fff;
+}
+
+.contact-card:hover {
+   background: #252b42;
+   color: #fff;
+}
+
+.contact-card__icon-container {
+}
+
+.contact-card__icon {
+   max-width: 72px;
+   width: 100%;
+}
+
+.contact-card__emails {
+}
+
+.contact-card__email {
+   font-weight: 600;
+   line-height: 171%;
+   letter-spacing: 0.01em;
+   color: #252b42;
+}
+
+.contact-card__title {
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 150%;
+   letter-spacing: 0.01em;
+}
+
+.contact-card__button {
+   padding: 10px 20px;
+   background: transparent;
+   font-weight: 600;
+   line-height: 171%;
+   letter-spacing: 0.01em;
+   color: #ff7b47;
+   border: 1px solid #ff7b47;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+/*--------------------------------FOOTER--------------------------------*/
 
 .footer {
 }
