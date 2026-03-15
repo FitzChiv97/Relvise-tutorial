@@ -750,8 +750,8 @@ html, body {
 @media(max-width:768px) {
    .subscribe {
       flex-direction: column;
-      justify-content: center;
-      align-items: stretch;
+      align-items: center;
+      text-align: center;
    }
 }
 
@@ -763,9 +763,16 @@ html, body {
    color: #fff;
 }
 
+@media(max-width:768px) {
+   .subscribe__content {
+      max-width: none;
+   }
+}
+
 .subscribe__action {
    flex: 1 1 auto;
    max-width: 450px;
+   width: 100%;
 }
 
 .subscribe__form {
