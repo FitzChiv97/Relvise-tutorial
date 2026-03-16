@@ -737,7 +737,7 @@ html, body {
    content: "";
    position: absolute;
    left: 50%;
-   top: 50%;
+   bottom: -15%;
    transform: translate(-50%, 0);
    z-index: -1;
    width: 100vw;
@@ -838,21 +838,15 @@ html, body {
 .contact-us__row {
    display: flex;
    justify-content: center;
+   align-items: center;
    flex-wrap: wrap;
-   gap: 7px;
 }
 
 .contact-us__card {
-   padding: 50px 40px;
-}
-
-@media(max-width: 360px) {
-   .contact-us__card {
-      padding: 40px 20px;
-   }
 }
 
 .contact-card {
+   padding: 50px 40px;
    display: flex;
    max-width: 327px;
    flex-direction: column;
@@ -862,9 +856,10 @@ html, body {
    background: #fff;
 }
 
-.contact-card:hover {
-   background: #252b42;
-   color: #fff;
+@media(max-width: 360px) {
+   .contact-card {
+      padding: 40px 20px;
+   }
 }
 
 .contact-card__icon-container {
@@ -902,6 +897,39 @@ html, body {
    border: 1px solid #ff7b47;
    border-radius: 5px;
    cursor: pointer;
+   transition: 
+   background 0.3s ease,
+   color 0.3s ease;
+}
+
+.contact-card__button:hover {
+   color: #fff;
+   background-color: #ff7b47;
+}
+
+.contact-card_blue {
+   padding: 80px 40px;
+   color: #fff;
+   background-color: #252b42;
+}
+
+.contact-card_blue img {
+   filter: brightness(0) invert(1);
+}
+
+.contact-card_blue a {
+   color: #fff;
+}
+
+.contact-card_blue button {
+   color: #fff;
+   border: 1px solid #fff;
+   transition: background 0.3s ease;
+}
+
+.contact-card_blue button:hover {
+   color: #252b42;
+   background: #fff;
 }
 
 /*--------------------------------FOOTER--------------------------------*/
