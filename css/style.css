@@ -808,6 +808,7 @@ html, body {
    background: transparent;
    border: none;
    outline: none;
+   font-size: 14px;
    line-height: 200%;
    letter-spacing: 0.01em;
 }
@@ -818,6 +819,7 @@ html, body {
    background: #ff7b47;
    border: none;
    color: #fff;
+   font-size: 14px;
    line-height: 200%;
    letter-spacing: 0.01em;
    text-align: center;
@@ -842,13 +844,32 @@ html, body {
    flex-wrap: wrap;
 }
 
-.contact-us__card {
+@media(max-width: 1024px) {
+   .contact-us__row {
+      gap: 7px;
+   }
 }
+
+.contact-us__card {
+   flex: 0 1 30%;
+}
+
+@media(max-width: 1024px) {
+   .contact-us__card {
+      flex: 0 1 50%;
+   }
+}
+
+/* @media(max-width: 768px) {
+   .contact-us__card {
+      flex: ;
+   } 
+} */
+
 
 .contact-card {
    padding: 50px 40px;
    display: flex;
-   max-width: 327px;
    flex-direction: column;
    align-items: center;
    gap: 15px;
@@ -871,6 +892,9 @@ html, body {
 }
 
 .contact-card__emails {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 
 .contact-card__email {
@@ -890,6 +914,7 @@ html, body {
 .contact-card__button {
    padding: 10px 20px;
    background: transparent;
+   font-size: 14px;
    font-weight: 600;
    line-height: 171%;
    letter-spacing: 0.01em;
@@ -911,6 +936,18 @@ html, body {
    padding: 80px 40px;
    color: #fff;
    background-color: #252b42;
+}
+
+@media(max-width: 1024px) {
+   .contact-card_blue {
+      padding: 50px 40px;
+   }
+}
+
+@media(max-width: 360px) {
+   .contact-card_blue {
+      padding: 40px 20px;
+   }
 }
 
 .contact-card_blue img {
