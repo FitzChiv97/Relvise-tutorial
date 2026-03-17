@@ -969,6 +969,74 @@ html, body {
    background: #fff;
 }
 
+/*--------------------------------FEEDBACK--------------------------------*/
+
+.feedback {
+   padding: 40px 0px;
+}
+
+.feedback__row {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   gap: 20px;
+}
+
+@media(max-width: 500px) {
+   .feedback__row {
+      justify-content: center;
+      text-align: center;
+   }
+}
+
+.feedback__content {
+
+}
+
+.feedback__title {
+   font-weight: 700;
+   font-size: 24px;
+   line-height: 133%;
+   letter-spacing: 0em;
+}
+
+.feedback__subtitle {
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 143%;
+   letter-spacing: 0.01em;
+   color: #737373;
+}
+
+.feedback__button-wrapper {
+}
+
+.feedback__button {
+   padding: 15px 40px;
+   background: #ff7b47;
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 200%;
+   letter-spacing: 0.01em;
+   color: #fff;
+   text-align: center;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   user-select: none;
+   transition: 
+   background 0.3s ease,
+   transform 0.05s ease;
+}
+
+.feedback__button:hover {
+   background: #e56b3a;
+}
+
+.feedback__button:active {
+   transform: translateY(2px);
+}
+
 /*--------------------------------FOOTER--------------------------------*/
 
 .footer {
