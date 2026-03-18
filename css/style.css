@@ -1012,16 +1012,18 @@ html, body {
 }
 
 .feedback__button {
-   padding: 15px 40px;
    background: #ff7b47;
+   border: none;
+   border-radius: 5px;
+   padding: 15px 40px;
+
+   color: #fff;
    font-weight: 700;
    font-size: 14px;
    line-height: 200%;
    letter-spacing: 0.01em;
-   color: #fff;
    text-align: center;
-   border: none;
-   border-radius: 5px;
+   
    cursor: pointer;
    user-select: none;
    transition: 
