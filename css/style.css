@@ -1109,30 +1109,69 @@ html, body {
 }
 
 .info__link {
-   border-bottom: 1px solid transparent;
+   position: relative;
    color: #fff;
    font-weight: 600;
    font-size: 14px;
    line-height: 171%;
    letter-spacing: 0.01em;
-   transition: 
-   border-bottom 0.3s ease,
-   opacity 0.3s ease;
 }
-
-/* .info__link_phone-icon::before {
-   content: '';
-   background: url('../img/footer-icons/phone-icon.svg') 0 0 no-repeat;
-   width: 23px;
-   height: auto;
-   position: absolute;
-   top: 4px;
-   left: 0;
-} */
 
 .info__link:hover,
 .info__link:focus {
-   border-bottom: 1px solid #e7e7e7;
    outline: none;
    opacity: 0.8;
+}
+
+.info__link::after {
+   content: '';
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   left: 0;
+   height: 1px;
+   background: #e7e7e7;
+   opacity: 0;
+   transition: opacity 0.3s ease;
+}
+
+.info__link:hover::after,
+.info__link:focus::after {
+   opacity: 1;
+}
+
+.info__link_phone-icon,
+.info__link_map-icon,
+.info__link_email-icon {
+   padding-left: 30px;
+}
+
+.info__link_phone-icon::before,
+.info__link_map-icon::before,
+.info__link_email-icon::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 24px;
+   height: 24px;
+   background: center / contain no-repeat;
+}
+
+.info__link_phone-icon::before {
+   background-image: url('../img/footer-icons/phone-icon.svg');
+}
+
+.info__link_map-icon::before {
+   background-image: url('../img/footer-icons/map-icon.svg');
+}
+
+.info__link_email-icon::before {
+   background-image: url('../img/footer-icons/email-icon.svg');
+}
+
+.info__link_phone-icon::after,
+.info__link_map-icon::after,
+.info__link_email-icon::after {
+   left: 30px;
 }
