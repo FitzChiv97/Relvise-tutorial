@@ -130,7 +130,13 @@ html, body {
    background: #ff7b47;
    border: none;
    border-radius: 2px;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
    cursor: pointer;
+   transition: background 0.3s ease;
+}
+
+.menu.active .menu__burger-icon {
+   background: #cf6338;
 }
 
 @media(max-width: 768px) {
@@ -140,7 +146,6 @@ html, body {
       top: 25px;
       right: 20px;
       z-index: 60;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
    }
 }
 
@@ -149,6 +154,21 @@ html, body {
    height: 2px;
    width: 25px;
    background-color: #fff;
+   transition: 
+   transform 0.3s ease,
+   opacity 0.3s ease;
+}
+
+.menu.active .menu__burger-line:nth-child(1) {
+   transform: translateY(9px) rotate(45deg);
+}
+
+.menu.active .menu__burger-line:nth-child(2) {
+   opacity: 0;
+}
+
+.menu.active .menu__burger-line:nth-child(3) {
+   transform: translateY(-9px) rotate(-45deg);
 }
 
 .menu__list {
@@ -166,15 +186,15 @@ html, body {
       width: 200px;
       height: 100vh;
       flex-direction: column;
-      padding: 25px 0px 0px 15px;
+      gap: 0;
+      padding: 25px 0px 0px 0px;
       background: #fff;
       box-shadow: -3px 0px 10px rgba(0, 0, 0, 0.3);
+      transition: right 0.3s ease;
    }
-}
 
-@media(max-width: 500px) {
-   .menu__list {
-      gap: 35px;
+   .menu.active .menu__list {
+      right: 0;
    }
 }
 
@@ -182,14 +202,55 @@ html, body {
 }
 
 .menu__link {
+   position: relative;
    font-weight: 600;
    line-height: 171%;
    color: #737373;
+   transition: 
+   color 0.2s ease,
+   background 0.2s ease;
+}
+
+.menu__link:hover {
+   color: #252b42;
+}
+
+.menu__link::after {
+   content: '';
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   height: 1px;
+   background: #252b42;
+   opacity: 0;
+   transition: opacity 0.2s ease;
+}
+
+.menu__link:hover::after {
+   opacity: 1;
 }
 
 @media(max-width: 768px) {
    .menu__link {
+      display: block;
+      padding: 10px 20px;
+   }
+
+   .menu__link:hover{
+      background: #e0e0e0;
       color: #252b42;
+   }
+
+   .menu__link:hover::after {
+      opacity: 0;
+   }
+}
+
+@media(max-width: 500px) {
+   .menu__link {
+      padding: 15px 20px;
+      font-size: 18px;
    }
 }
 
