@@ -139,12 +139,6 @@ body._lock::before {
    color: inherit;
 }
 
-.header__menu {
-}
-
-.menu {
-}
-
 .menu__burger-icon {
    display: none;
    flex-direction: column;
@@ -230,9 +224,6 @@ body._lock::before {
    }
 }
 
-.menu__item {
-}
-
 .menu__link {
    position: relative;
    font-weight: 600;
@@ -291,18 +282,10 @@ body._lock::before {
    flex: 1 1 auto;
 }
 
-.page__main-block {
-
-}
-
 .page__services {
    position: relative;
    z-index: 2;
    margin: -111px 0px 0px 0px; /* negative margin prevents gap between sections below! */
-}
-
-.page__practice {
-
 }
 
 /*------------------MAIN-BLOCK------------------------*/
@@ -310,10 +293,6 @@ body._lock::before {
 .main-block {
    position: relative;
 } 
-
-.main-block__container {
-
-}
 
 .main-block__body {
    padding: 184px 0px 191px 0px;
@@ -424,16 +403,6 @@ body._lock::before {
 
 /*------------------SERVICES------------------------*/
 
-.services {
-}
-
-.sevices-container {
-
-}
-
-.services__body {
-}
-
 @media (min-width: 670px) {
    .services__body {
       display: flex;
@@ -472,10 +441,6 @@ body._lock::before {
    padding: 35px 40px;
 }
 
-.item-service {
-
-}
-
 .item-service_green {
    background: #0d5c63;
 }
@@ -490,10 +455,6 @@ body._lock::before {
 
 .item-service > *:not(:last-child) {
    margin: 0px 0px 10px 0px;
-}
-
-.item-service__icon {
-
 }
 
 .item-service__title {
@@ -669,10 +630,6 @@ body._lock::before {
    }
 }
 
-.practice__item {
-
-}
-
 .item-practice {
    background-color: #fff;
    display: flex;
@@ -827,11 +784,6 @@ body._lock::before {
 }
 
 /*------------------PARTNERS------------------------*/
-/* 1440 1280 1024 768 500 480 420 360 320 */
-
-.partners {
-
-}
 
 .partners__grid {
    padding: 50px 0px 70px 0px;
@@ -996,9 +948,6 @@ body._lock::before {
    }
 }
 
-.contact-card__icon-container {
-}
-
 .contact-card__icon {
    max-width: 72px;
    width: 100%;
@@ -1102,10 +1051,6 @@ body._lock::before {
    }
 }
 
-.feedback__content {
-
-}
-
 .feedback__title {
    font-weight: 700;
    font-size: 24px;
@@ -1119,9 +1064,6 @@ body._lock::before {
    line-height: 143%;
    letter-spacing: 0.01em;
    color: #737373;
-}
-
-.feedback__button-wrapper {
 }
 
 .feedback__button {
@@ -1159,9 +1101,6 @@ body._lock::before {
 }
 .footer__info {
    padding: 50px 0px;
-}
-
-.info {   
 }
 
 .info__grid {
@@ -1223,9 +1162,6 @@ body._lock::before {
    display: flex;
    flex-direction: column;
    gap: 10px;
-}
-
-.info__item {
 }
 
 .info__link {
